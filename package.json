@@ -1,0 +1,32 @@
+{
+  "name": "gas-gemini-base",
+  "version": "1.0.0",
+  "description": "Google Apps Script development base with multi-model Gemini API fallback",
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "watch": "node esbuild.config.js --watch",
+    "push": "npm run build && clasp push",
+    "push:force": "npm run build && clasp push --force",
+    "deploy": "npm run build && clasp push && clasp deploy",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.83",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.2",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
+    "esbuild": "^0.23.0",
+    "eslint": "^9.5.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.5",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "@google/clasp": "^2.4.2"
+  }
+}

@@ -1,0 +1,62 @@
+# ===========================
+# Node.js
+# ===========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ===========================
+# Build output
+# ===========================
+dist/
+
+# ===========================
+# TypeScript
+# ===========================
+*.tsbuildinfo
+
+# ===========================
+# Clasp / GAS secrets
+# ===========================
+# .clasp.json には scriptId が含まれるため Git 管理外にする
+# .clasp.json.example をテンプレートとして提供すること
+.clasp.json
+.clasprc.json
+
+# ===========================
+# Environment / Secrets
+# ===========================
+.env
+.env.local
+.env.*.local
+
+# ===========================
+# IDE / Editor
+# ===========================
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ===========================
+# OS
+# ===========================
+.DS_Store
+Thumbs.db
+
+# ===========================
+# Test / Coverage
+# ===========================
+coverage/
+.nyc_output/
+
+# ===========================
+# Logs
+# ===========================
+logs/
+*.log
