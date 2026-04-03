@@ -44,9 +44,9 @@
 
 | 優先度 | モデル ID |
 |--------|-----------|
-| 1（最優先）| `gemini-2.5-flash-preview-04-17` |
+| 1（最優先）| `gemini-3-flash-preview` |
 | 2 | `gemini-2.5-flash` |
-| 3 | `gemini-2.5-flash-lite-preview-06-17` |
+| 3 | `gemini-2.5-flash-lite` |
 
 > モデルの追加・変更は `src/infra/AIClient.ts` の `MODEL_PRIORITY` 配列を編集するだけです。
 

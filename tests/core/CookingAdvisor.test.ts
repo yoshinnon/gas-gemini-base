@@ -166,7 +166,8 @@ describe("calcPastaEmulsification", () => {
   it("パスタ重量に比例して brothMl が増える", () => {
     const guide100 = calcPastaEmulsification(100, 480);
     const guide200 = calcPastaEmulsification(200, 480);
-    expect(guide200.brothMl).toBeCloseTo(guide100.brothMl * 2, 0);
+    // 2倍になることを ±2mL の誤差範囲で確認（Math.round の丸め誤差を考慮）
+    expect(Math.abs(guide200.brothMl - guide100.brothMl * 2)).toBeLessThanOrEqual(2);
   });
 
   it("steps に 6 つ以上のステップが含まれる", () => {

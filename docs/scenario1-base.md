@@ -41,9 +41,9 @@ infra/AIClient.ts        ← マルチモデル Gemini クライアント
 ```typescript
 // src/infra/AIClient.ts より
 export const MODEL_PRIORITY: string[] = [
-  "gemini-2.5-flash-preview-04-17", // 優先度1: 最高性能
+  "gemini-3-flash-preview", // 優先度1: 最高性能
   "gemini-2.5-flash",               // 優先度2: バランス
-  "gemini-2.5-flash-lite-preview-06-17", // 優先度3: 軽量
+  "gemini-2.5-flash-lite", // 優先度3: 軽量
 ];
 ```
 
@@ -119,7 +119,7 @@ console.log(result.usageMetadata); // トークン消費量
 
 ```typescript
 // カスタムモデルリストを指定する場合
-const client = new AIClient(["gemini-2.5-flash", "gemini-2.5-flash-lite-preview-06-17"]);
+const client = new AIClient(["gemini-2.5-flash", "gemini-2.5-flash-lite"]);
 ```
 
 ---
@@ -144,10 +144,10 @@ npx jest tests/infra/AIClient.test.ts
 
 ```typescript
 export const MODEL_PRIORITY: string[] = [
-  "gemini-2.0-flash-exp",   // 実験的モデルを最優先に
-  "gemini-2.5-flash-preview-04-17",
+  "gemini-3-flash-preview",  // 必要に応じて追加
+  "gemini-3-flash-preview",
   "gemini-2.5-flash",
-  "gemini-2.5-flash-lite-preview-06-17",
+  "gemini-2.5-flash-lite",
 ];
 ```
 

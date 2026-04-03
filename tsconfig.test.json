@@ -3,7 +3,8 @@
   "compilerOptions": {
     "module": "CommonJS",
     "moduleResolution": "node",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "types": ["google-apps-script", "jest", "node"]
   },
   "include": ["src/**/*.ts", "tests/**/*.ts"]
 }

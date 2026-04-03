@@ -7,7 +7,7 @@
  * MODEL_PRIORITY 配列の要素を増減させるだけで切り替えロジックは自動的に適用される。
  */
 
-import { Config, ConfigError } from "./Config";
+import { Config } from "./Config";
 import { GasLogger, UsageMetadata } from "./Logger";
 
 // ===========================
@@ -75,9 +75,9 @@ const GEMINI_API_BASE =
  * モデルの追加・変更はここを編集するだけでよい。
  */
 export const MODEL_PRIORITY: string[] = [
-  "gemini-2.5-flash-preview-04-17", // 最優先（gemini-3-flash-previewの正式モデルID）
+  "gemini-3-flash-preview", // 最優先: Pro級の推論とツール使用
   "gemini-2.5-flash",
-  "gemini-2.5-flash-lite-preview-06-17",
+  "gemini-2.5-flash-lite",
 ];
 
 // ===========================

@@ -12,9 +12,8 @@
  * - identifier をキーとした差分更新（新規: 追加、既存: 数値列のみ更新）
  */
 
-import { AssetCategory, CurrencyCode } from "../core/AssetParser";
+import { AssetCategory } from "../core/AssetParser";
 import { PortfolioItem } from "../core/AssetUseCase";
-import { ExchangeRate } from "../infra/FinanceApi";
 
 // ===========================
 // シート名定数
@@ -237,8 +236,6 @@ export class AssetRepository {
       })
       .setOption("vAxis", { format: "¥#,##0" })
       .setPosition(2, 4, 0, 0) // 2行目・4列目の位置にグラフを配置
-      .setNumRows(lastRow)
-      .setNumColumns(2)
       .build();
 
     sheet.insertChart(chart);

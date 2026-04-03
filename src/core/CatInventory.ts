@@ -128,7 +128,7 @@ const PURCHASE_BUFFER_DAYS = 14;
 export function calcStockStatus(
   currentAmount: number,
   dailyConsumption: number,
-  unit: string,
+  _unit: string,
   variability = 0.2
 ): Pick<StockStatus, "remainingDays" | "statusLevel" | "recommendedPurchaseAmount"> {
   if (dailyConsumption <= 0) {
