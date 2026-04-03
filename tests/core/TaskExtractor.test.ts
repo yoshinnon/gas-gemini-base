@@ -8,7 +8,6 @@ import {
   buildSystemPrompt,
   buildUserPrompt,
   parseTaskResponse,
-  Task,
   TaskExtractionResult,
 } from "../../src/core/TaskExtractor";
 

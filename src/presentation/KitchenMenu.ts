@@ -15,8 +15,6 @@ import {
   buildInventorySummary,
   createStockStatus,
   DEFAULT_DAILY_CONSUMPTION,
-  getStatusLabel,
-  getStatusColor,
 } from "../core/CatInventory";
 import { calcPastaEmulsification } from "../core/CookingAdvisor";
 import { ConfigError } from "../infra/Config";

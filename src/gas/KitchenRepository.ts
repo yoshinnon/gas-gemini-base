@@ -8,12 +8,10 @@
  * - CookingDashboard : 本日の食材リストと調理アドバイスのダッシュボード
  */
 
-import { ScienceIngredient, StorageMethod, IngredientCategory } from "../core/ScienceParser";
+import { ScienceIngredient, IngredientCategory } from "../core/ScienceParser";
 import { CookingAdvice } from "../core/CookingAdvisor";
 import {
   StockStatus,
-  StockStatusLevel,
-  CatSupplyCategory,
   InventorySummary,
   getStatusColor,
   getStatusLabel,

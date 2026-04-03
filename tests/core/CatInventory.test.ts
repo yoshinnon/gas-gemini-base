@@ -40,10 +40,10 @@ describe("calcStockStatus", () => {
     expect(result.statusLevel).toBe("empty");
   });
 
-  it("日消費量 0 は remainingDays = 9999 で ok", () => {
+  it("日消費量 0 は remainingDays が Infinity（消費なし）で ok", () => {
     const result = calcStockStatus(1000, 0, "g");
     expect(result.statusLevel).toBe("ok");
-    expect(result.remainingDays).toBe(9999);
+    expect(result.remainingDays).toBe(Infinity);
   });
 
   it("推奨購入量は バッファ日数(14日)分を補充する量", () => {
