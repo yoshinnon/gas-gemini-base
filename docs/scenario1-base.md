@@ -145,7 +145,6 @@ npx jest tests/infra/AIClient.test.ts
 ```typescript
 export const MODEL_PRIORITY: string[] = [
   "gemini-3-flash-preview",  // 必要に応じて追加
-  "gemini-3-flash-preview",
   "gemini-2.5-flash",
   "gemini-2.5-flash-lite",
 ];
